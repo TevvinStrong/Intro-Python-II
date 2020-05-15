@@ -2,7 +2,11 @@
 # currently.
 
 
-# PLAYER CLAS
-class Player():
-    def __init__(self, room):
+# PLAYER CLASS
+class Player:
+    def __init__(self, name, room):
+        self.name = name
         self.room = room
+
+    def __str__(self):
+        f'{self.name} is in {self.room}'
