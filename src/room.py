@@ -3,7 +3,10 @@
 
 
 # ROOM CLASS
-class Room():
+class Room:
     def __init__(self, name, description):
         self.name = name
-        self.desctiption = description
+        self.description = description
+
+    def __str__(self):
+        return f'Room name is {self.name}, Room description is {self.description}'
